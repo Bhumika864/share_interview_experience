@@ -99,7 +99,6 @@ const PostList = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-24 mx-4 sm:mx-16 xl:mx-40">
-
         {blog_data
           .filter((blog) => role === "" || blog.JobTitle === role)
           .filter((blog) => type === "" || blog.Companytype === type)
@@ -108,13 +107,12 @@ const PostList = () => {
           )
           .filter((blog) => Level === "" || blog.Difficulty === Level)
           .filter((blog) => Outcome === "" || blog.Outcome === Outcome)
-          .filter((blog)=>Types===""||blog.Type===Types)
+          .filter((blog) => Types === "" || blog.Type === Types)
           .map((blog) => (
             <PostCard key={blog._id} blog={blog} />
           ))}
       </div>
     </div>
-
   );
 };
 
