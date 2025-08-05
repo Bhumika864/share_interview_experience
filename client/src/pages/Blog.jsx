@@ -19,9 +19,22 @@ const Blog = () => {
   const fetchComments = async () => {
     setComments(comments_data);
   };
-const addComment=async(e)=>{
+const addComment = async (e) => {
   e.preventDefault();
-}
+
+  if (!name || !content) return;
+
+  const newComment = {
+    name: name,
+    content: content,
+    createdAt: new Date().toISOString(),
+  };
+
+  setComments([newComment, ...Comments]);
+  setName('');
+  setContent('');
+};
+
   useEffect(() => {
     fetchPostData();
     fetchComments();
