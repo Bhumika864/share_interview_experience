@@ -15,9 +15,7 @@ const Header = () => {
     <input type="text" placeholder='Search for blogs'  className='w-full pl-4 outline-none' required/>
     <button type="submit" className='bg-primary text-white px-8 py-2 m-1.5 rounded hover:scale-105 transition-all cursor-pointer'>Search</button>
   </form>
-</div>
-
-    
+</div>   
   )
 }
 

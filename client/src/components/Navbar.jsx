@@ -6,7 +6,6 @@ const Navbar = () => {
   return (
     
     <div className='flex justify-between items-center py-5 mx-8 sm:mx-20 xl:mx-32 ' >
-      {/* <img onClick={()=>navigate('/')} src={assets.logo}/> */}
       <div class="text-4xl font-bold bg-gradient-to-r from-blue-500 to-indigo-600 text-transparent bg-clip-text">
   HireStory
 </div>

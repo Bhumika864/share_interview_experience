@@ -162,6 +162,7 @@ export const blog_data = [
 ,
    {
     "_id": "6805ee7dd8f584af5da78d48",
+    "isPublished":"Published",
   "CompanyName": "Microsoft",
   "CompanyLocation": "Remote",
   "Companytype": "Product-Based",
@@ -203,6 +204,7 @@ export const blog_data = [
 ,
    {
     "_id": "6805ee7dd8f584af5da78d97",
+    
   "CompanyName": "Swiggy",
   "CompanyLocation": "Remote",
   "Companytype": "Startups",
